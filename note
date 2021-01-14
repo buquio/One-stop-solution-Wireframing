@@ -1,0 +1,6 @@
+If that's the case, you can put the nav inside a div. 
+That will be the parent of the nav then apply 
+display : flex on your stylesheet to that div 
+then justify-content to whichever direction. 
+To the right use justify-content : flex-end.
+
