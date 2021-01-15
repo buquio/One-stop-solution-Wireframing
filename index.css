@@ -1,201 +1,227 @@
-body {
-    color: #414141;
-    margin: 0;
-    text-align: center;
+  
+
+html {
+    box-sizing: border-box;
     font-family: 'Montserrat', serif;
     font-size: 16px;
-    background-color: #FCFCFC;
-  }
-  
-  h1 {
-    /* font-size: 5.625rem; */
-    margin: 50px auto 0 auto;
-  }
-  
-  h2 {
-    font-size: 1.2rem;
-    /* font-weight: normal; */
-    padding-bottom: 10px;
-  }
-  
-  h3 {
-    font-size: 0.8rem;
+}
 
-  }
-  
-  p {
-    line-height: 2;
-  }
- /* xxxxx  */
-  header {
-    /* background: #f8f8f8; */
-    padding: 2em 0;
+
+body {
     width: 100%;
-}
-
-
-.container {
-    width: 90%;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.container-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-/* navigation */
-.container-nav{
-  display: flex;
-  /* flex-direction: column; */
-  /* align-items: flex-end; */
-}
-.navbar-brand {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-nav{
-  background-color: #414141;
-}
-nav ul {
-    list-style: none;
+    margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
 }
 
-nav li {
-    margin-left: 2em;
-
+ .navbar-brand{
+    font-family: 'Ubuntu', serif;
+    font-weight: 700;
+    margin: 0;
+    color: #414141;
 }
 
-nav a {
-    text-decoration: none;
-    /* color: #707070; */
-    /* font-weight: 700; */
-    padding: .25em 0;
-}
-
-nav a:hover,
-nav a:focus {
-    /* color: #1792d2; */
-}
-
-
-/* xxxx */
-.top-container,.download,.vendors{
-  background-color:#D3D3D3 ;
-}
-  .dotted {
-    border: dotted #414141 5px;
+.dotted {
+    border: dotted #111111 5px;
     border-bottom: none;
     width: 5%;
     margin: 100px auto;
   }
+
   
-  
-
-  hr {
-    border: solid #D3D3D3 20px;
-    /* border-bottom: none; */
-    width: 20%;
-    margin: 100px auto;
-  }
-  
-  .circle {
-	background-color: #A2A2A2;
-	border-radius: 100%;
-	height: 60px;
-    width: 60px;
-    margin: 100px auto;
-    
+h2 {
+    text-align: center;
+    text-transform: uppercase;
 }
 
-.side-circle {
-	background-color: #A2A2A2;
-	border-radius: 100%;
-	height: 30px;
-    width: 30px;
-    margin-left: auto;
-    
+h3 {
+    font-size: 1.5rem;
+    margin: 0;
 }
 
-.card-container{
-  /* padding: 15px 0; */
-	/* height: 400px; */
-	width: 100%;
+h5 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+
 }
 
-
-
-.card{
-  /* margin: 0 50% 0 50%; */
-  width: auto;
-  height: auto;
-}
-
- .linebar{
-     width: 30%;
- }
-
- .linebarbreak{
-   display: flex;
- }
-
-
- .long{
-     width: 50%;
- }
- .short{
-     width: 20%;
- }
-  a{
-    color: #FCFCFC;
-    margin: 10px 20px;
+a {
+    display: inline-block;
+    text-transform: uppercase;
     text-decoration: none;
-  }
-  
-  a:hover {
-    color: #A2A2A2;
-  }
-  
-  .our-offering-container {
-    margin: 100px 0;
-  }
-  
-  .download-container {
-    padding: 20px 50px;
-  }
-  
-  .testimonial-container{
-    padding: 50px 0 20px;
-  }
-
-.popular-vendors-container{
-  padding: 50px 0 20px;
-  
-}
-
-.find-vendor-container{
-  padding: 50px 0 20px;
 
 }
 
-  
-  .top-button{
+ul {
+    list-style-type: none;
+}
+
+
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+    
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    padding-right: 20px;
+    color: #000;
+    transition-property: transform, color;
+    transition-duration: 1s, 1s;
+}
+
+.nav-bar ul li a:hover {
+    transform: scale(0.9);
+    color: #414141;
+}
+
+.container {
+    padding-bottom: 30px;
+}
+
+.intro, .our-offerings-container, .download-container, .testimonial-container, .popular-vendors-container, .find-vendor-container {
+    width: 100%;
+    padding: 30px 30px;
+}
+
+.intro {
     background-color: #414141;
-    color: #d3d3d3;
-  }
-  
-  .button {
-    border-radius: 8px;
-    font-size: 20px;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-  }
-  
-  .btn:hover {
-    text-decoration: none;
-  }
-  
+    margin-top: 5px;
+    text-align: center;
+}
+
+.intro-info {
+    padding: 30px 60px;
+}
+
+.intro-info p, .download-container p, .find-vendor-container p {
+    color: #FCFCFC;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.intro-link, .download-links a, .find-vendor-container a {
+    color: #FCFCFC;
+    border: 1px solid #FCFCFC;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px 0px;
+}
+
+.intro-link {
+    padding: 10px 20px;
+}
+
+img {
+    border-radius: 100%;
+
+    max-width: 100%;
+    width: 200px;
+    height: 200px;
+}
+.our-offerings-container h2, .testimonial-container h2, .popular-vendors-container h2 {
+    color: #414141;
+}
+
+.card-container, .vendor-container  {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    column-gap: 30px;
+    row-gap: 20px;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.card, .vendor-card {
+    text-align: center;
+}
+
+.offering-info {
+    text-align: justify;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.see-more {
+    text-align: right;
+    color: #414141;
+}
+
+.download-container, .find-vendor-container {
+    background-color: #414141;
+    text-align: center;
+}
+
+.download-container {
+    padding: 30px 90px;
+}
+
+.download-container h2, h3, .find-vendor-container h2 {
+    color: rgb(12, 12, 12);
+}
+
+.download-links a {
+    padding: 10px 30px;
+    margin: 0px 10px 10px 10px;
+}
+
+.testimonial-container {
+    text-align: center;
+
+}
+
+
+.testimonial-container p {
+    padding: 0 100px;
+    line-height: 1.5;
+}
+
+
+.find-vendor-container a {
+    padding: 20px 60px;
+}
+
+.intro-link, .download-links a, .find-vendor-container a {
+    transition: transform 1s;
+}
+
+.intro-link:hover, .download-links a:hover, .find-vendor-container a:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 960px) {
+    .intro-info {
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .intro, .our-offerings-container, .download-container, .testimonial-container, .popular-vendors-container, .find-vendor-container {
+        padding: 25px;
+    }
+
+    .intro-info {
+        padding: 15px 0;
+    }
+
+    .testimonial-container p {
+        padding: 0 60px;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .testimonial-container p {
+        padding: 0;
+    }
+}
